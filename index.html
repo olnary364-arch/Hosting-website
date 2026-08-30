@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Nary OL, an Information Technology student and web developer based in Phnom Penh, Cambodia.">
+    <title>Nary OL</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader" aria-hidden="true">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar" aria-label="Primary navigation">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#skills" class="nav-link"><i class="fas fa-code-branch"></i> Skills</a></li>
+                <li><a href="#projects" class="nav-link"><i class="fas fa-briefcase"></i> Projects</a></li>
+                <li><a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle" type="button" title="Toggle Theme" aria-label="Toggle color theme">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <button class="cv-btn" type="button">
+                    <i class="fas fa-download"></i> Download CV
+                </button>
+                <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-controls="navMenu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="greeting"><i class="fas fa-hand"></i> Hello, I'm</p>
+                <h1 class="hero-title">Nary OL</h1>
+                <p class="hero-subtitle">IT Student <span>|</span> Web Developer</p>
+                <p class="hero-description">
+                    I'm an Information Technology student passionate about building meaningful and user-friendly web experiences. Always learning, exploring, and improving.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary"><i class="fas fa-play-circle"></i> View My Work</a>
+                    <a href="#contact" class="btn btn-secondary"><i class="fas fa-paper-plane"></i> Contact Me</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" title="GitHub" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon" title="LinkedIn" aria-label="LinkedIn profile"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon" title="Facebook" aria-label="Facebook profile"><i class="fab fa-facebook-f"></i></a>
+                    <a href="mailto:naryol.student@gmail.com" class="social-icon" title="Email" aria-label="Email Nary OL"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-badges">
+                    <div class="floating-badge"><i class="fas fa-check-circle"></i> Web Developer</div>
+                    <div class="floating-badge"><i class="fas fa-star"></i> 5+ Projects</div>
+                </div>
+                <div class="image-wrapper">
+                    <div class="circle-background"></div>
+                    <img src="assets/profile.jpg" alt="Nary OL portrait">
+                    <div class="decorative-element"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">Get to know more about who I am and what I do</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I'm Nary OL, an IT student who loves web programming, problem solving, and creating clean user interfaces. I enjoy turning ideas into real projects and learning new technologies.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-user"></i>
+                            <div class="info-detail">
+                                <span class="label">Name</span>
+                                <span class="value">Nary OL</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-birthday-cake"></i>
+                            <div class="info-detail">
+                                <span class="label">Age</span>
+                                <span class="value">20</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div class="info-detail">
+                                <span class="label">Study</span>
+                                <span class="value">Information Technology at PNC</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info-detail">
+                                <span class="label">Location</span>
+                                <span class="value">Phnom Penh, Cambodia</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope-open"></i>
+                            <div class="info-detail">
+                                <span class="label">Email</span>
+                                <span class="value"><a href="mailto:naryol.student@gmail.com">naryol.student@gmail.com</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Read More About Me</a>
+                </div>
+                <div class="about-image">
+                    <img src="assets/profile.jpg" alt="Portfolio photo of Nary OL" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">Technologies and tools I've been working with</p>
+            <div class="skills-grid">
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="90%"></div>
+                    </div>
+                    <p class="skill-percentage">90%</p>
+                </div>
+
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="85%"></div>
+                    </div>
+                    <p class="skill-percentage">85%</p>
+                </div>
+
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="80%"></div>
+                    </div>
+                    <p class="skill-percentage">80%</p>
+                </div>
+
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="75%"></div>
+                    </div>
+                    <p class="skill-percentage">75%</p>
+                </div>
+
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>Git & GitHub</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="80%"></div>
+                    </div>
+                    <p class="skill-percentage">80%</p>
+                </div>
+
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="75%"></div>
+                    </div>
+                    <p class="skill-percentage">75%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">Check out some of my recent work</p>
+            <div class="projects-grid">
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/350x250/2563eb/ffffff?text=EduLearn" alt="EduLearn" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>EduLearn - Learning Platform</h3>
+                        <p>A learning management system where students can enroll courses, track progress and take quizzes.</p>
+                        <div class="project-tags">
+                            <span class="tag"><i class="fab fa-html5"></i> HTML</span>
+                            <span class="tag"><i class="fab fa-css3-alt"></i> CSS</span>
+                            <span class="tag"><i class="fab fa-js"></i> JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/350x250/2563eb/ffffff?text=Task+Manager" alt="Task Manager" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Manager Web App</h3>
+                        <p>A task management application to add, edit, delete and organize daily tasks.</p>
+                        <div class="project-tags">
+                            <span class="tag"><i class="fab fa-html5"></i> HTML</span>
+                            <span class="tag"><i class="fab fa-css3-alt"></i> CSS</span>
+                            <span class="tag"><i class="fab fa-js"></i> JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/350x250/2563eb/ffffff?text=Portfolio" alt="Portfolio" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>A responsive portfolio website to showcase my skills, projects and contact information.</p>
+                        <div class="project-tags">
+                            <span class="tag"><i class="fab fa-html5"></i> HTML</span>
+                            <span class="tag"><i class="fab fa-css3-alt"></i> CSS</span>
+                            <span class="tag"><i class="fab fa-js"></i> JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">My academic journey and learning experiences</p>
+            <div class="education-card animate-on-scroll">
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="education-content">
+                    <h3>Information Technology at PNC</h3>
+                    <p class="education-date"><i class="fas fa-calendar-alt"></i> 2023 - Present</p>
+                    <p class="education-description">Learning web development, databases, networking, programming and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-divider"></div>
+            <p class="contact-description">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-box">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:naryol.student@gmail.com">naryol.student@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>088 31 33 654</p>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Phnom Penh, Cambodia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" autocomplete="name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" autocomplete="email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-code"></i>
+                    Nary OL
+                </div>
+                <div class="footer-links">
+                    <a href="#home"><i class="fas fa-home"></i> Home</a>
+                    <a href="#about"><i class="fas fa-user"></i> About</a>
+                    <a href="#skills"><i class="fas fa-code-branch"></i> Skills</a>
+                    <a href="#projects"><i class="fas fa-briefcase"></i> Projects</a>
+                    <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
+                    <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nary OL. All rights reserved.</p>
+                <button class="back-to-top hidden" id="backToTop" type="button" title="Back to Top" aria-label="Back to top">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
